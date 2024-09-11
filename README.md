@@ -33,17 +33,17 @@
 #### Clash Meta(Verge/Nyanpasu):
 > 配置设置中输入配置文件链接（二选一）
 > 
-> https://cdn.jsdelivr.net/gh/cmontage/proxyrules-cm@main/ClashConfig.yaml
+> https://cdn.jsdelivr.net/gh/cmontage/proxyrules-cm@main/clash.yaml
 > 
-> https://raw.gitmirror.com/cmontage/proxyrules-cm/main/ClashConfig.yaml
+> https://raw.gitmirror.com/cmontage/proxyrules-cm/main/clash.yaml
 > 
 > 点击导入 <details><summary> 展开图片 </summary>![](source/info3.png)</details>
 #### Quantumult X:
 > 找到该页面，点击下载配置,输入链接（二选一）
 > 
-> https://cdn.jsdelivr.net/gh/cmontage/proxyrules-cm@main/QuantumultX.conf
+> https://cdn.jsdelivr.net/gh/cmontage/proxyrules-cm@main/quantumultx.conf
 >
-> https://raw.gitmirror.com/cmontage/proxyrules-cm/main/QuantumultX.conf
+> https://raw.gitmirror.com/cmontage/proxyrules-cm/main/quantumultx.conf
 > 
 > 导入配置 <details><summary> 展开图片 </summary>![](source/info5.png)</details>
 
