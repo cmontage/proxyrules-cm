@@ -1,0 +1,212 @@
+#-----------------------------------------------------------------#
+## 自用Clash配置模板
+## 作者：CMontage
+## 更新：2024-09-11
+## 注意：该配置为自用的模板，可能不适用于每个人，请自行根据自己的情况修改
+#-----------------------------------------------------------------#
+
+# 订阅链接 
+config:
+# Clash不支持某些订阅链接提取节点(例如CFW v.0.20.39)
+# 请用Clash Verge/Clash Nyanpasu等新内核的客户端
+# 如果一定要用Clash，请自行转换订阅为支持proxy-providers的链接
+  subscription-url: &url "https://......订阅地址"
+
+mixed-port: 7890
+allow-lan: #false
+mode: rule
+log-level: info
+external-controller: 127.0.0.1:9090
+
+dns:
+    enable: true
+    ipv6: true
+    default-nameserver: [223.5.5.5, 119.29.29.29]
+    enhanced-mode: fake-ip
+    fake-ip-range: 198.18.0.1/16
+    use-hosts: true
+    fake-ip-filter: [time.apple.com, time.windows.com, pool.ntp.org]
+    nameserver: ['https://doh.pub/dns-query', 'https://dns.alidns.com/dns-query']
+    fallback: ['https://1.1.1.1/dns-query', 'https://1.1.1.2/dns-query', 'https://208.67.222.222/dns-query', 'https://9.9.9.9/dns-query', 'https://45.11.45.11/dns-query', 'tls://8.8.4.4:853', 'https://doh.dns.sb/dns-query', 'https://dns.cloudflare.com/dns-query', 'https://dns.twnic.tw/dns-query']
+    fallback-filter: { geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32] }
+
+# 代理集 - 提供节点
+proxy-providers:
+
+  Node-Info: # 名称随意
+    type: http
+    path: ./myConfig/nodes/Node-Info.yaml
+    url: *url
+    interval: 1800
+    # 根据自己的订阅内容修改关键字
+    filter: '剩余|到期'   
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+  Node-HK:
+    type: http
+    path: ./myConfig/nodes/Node-HK.yaml
+    url: *url
+    interval: 1800
+    # 根据自己的订阅内容修改关键字
+    filter: '香港|hk|hong kong|hongkong|🇭🇰'
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+  Node-JP:
+    type: http
+    path: ./myConfig/nodes/Node-JP.yaml
+    url: *url
+    interval: 1800
+    # 根据自己的订阅内容修改关键字
+    filter: '日本|jp|japan|🇯🇵'
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+  Node-SG:
+    type: http
+    path: ./myConfig/nodes/Node-SG.yaml
+    url: *url
+    interval: 1800
+    # 根据自己的订阅内容修改关键字
+    filter: '新加坡|sg|singapore|🇸🇬'
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+  Node-US:
+    type: http
+    path: ./myConfig/nodes/Node-US.yaml
+    url: *url
+    interval: 1800
+    # 根据自己的订阅内容修改关键字
+    filter: '美国|us|usa|america|united states|unitedstates|🇺🇲|🇺🇸'
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+  Node-DE:
+    type: http
+    path: ./myConfig/nodes/Node-DE.yaml
+    url: *url
+    interval: 1800
+    # 根据自己的订阅内容修改关键字
+    filter: '德国|de|ger|germany|🇩🇪'
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+
+# 策略组
+proxy-groups:
+  # 根据自己的订阅内容修改
+  - { name: '🚀 代理节点'  , type: select, use: ['Node-Info', 'Node-HK', 'Node-JP', 'Node-SG', 'Node-US', 'Node-DE'] }
+  - { name: '🛸 Google'   , type: select, use: ['Node-US'] }
+  - { name: '🅿️ Paypal'   , type: select, use: ['Node-US'] }
+  - { name: '📺 Netflix'  , type: select, use: ['Node-SG', 'Node-HK', 'Node-JP', 'Node-US'] }
+  - { name: '✨ Copilot'     , type: select, proxies: ['🚀 代理节点', '🇨🇳 国内直连'], use: ['Node-HK', 'Node-JP', 'Node-SG', 'Node-US', 'Node-DE'] }
+  - { name: '🤖 OpenAI'   , type: select, use: ['Node-SG', 'Node-US'] }
+  - { name: '🇨🇳 国内直连'  , type: select, proxies: ['DIRECT'] }
+  - { name: '🍎 Apple'    , type: select, proxies: ['🇨🇳 国内直连', '🚀 代理节点'], use: ['Node-HK', 'Node-JP', 'Node-SG', 'Node-US', 'Node-DE'] }
+  - { name: '🪟 Microsoft', type: select, proxies: ['🇨🇳 国内直连','🚀 代理节点'], use: ['Node-HK', 'Node-JP', 'Node-SG', 'Node-US', 'Node-DE'] }
+  - { name: '❌️ 广告拦截'  , type: select, proxies: ['REJECT','DIRECT','🚀 代理节点'] }
+
+# 规则集
+rule-providers:
+  # 代理
+    google:
+      type: http
+      behavior: classical
+      url: "https://raw.gitmirror.com/cmontage/proxyrules-cm/main/Clash/PROXY/Google.yaml"
+      path: ./myConfig/ruleset/proxy/google.yaml
+      interval: 86400
+    
+    paypal:
+      type: http
+      behavior: classical
+      url: "https://raw.gitmirror.com/cmontage/proxyrules-cm/main/Clash/PROXY/Paypal.yaml"
+      path: ./myConfig/ruleset/proxy/paypal.yaml
+      interval: 86400
+
+    netflix:
+      type: http
+      behavior: classical
+      url: "https://raw.gitmirror.com/cmontage/proxyrules-cm/main/Clash/PROXY/Netflix.yaml"
+      path: ./myConfig/ruleset/proxy/netflix.yaml
+      interval: 86400
+  
+    copilot:
+      type: http
+      behavior: classical
+      url: "https://raw.gitmirror.com/cmontage/proxyrules-cm/main/Clash/PROXY/Copilot.yaml"
+      path: ./myConfig/ruleset/proxy/copilot.yaml
+      interval: 86400
+
+    openai:
+      type: http
+      behavior: classical
+      url: "https://raw.gitmirror.com/cmontage/proxyrules-cm/main/Clash/PROXY/OpenAI.yaml"
+      path: ./myConfig/ruleset/proxy/openai.yaml
+      interval: 86400
+
+  # 直连
+    china:
+      type: http
+      behavior: classical
+      url: "https://raw.gitmirror.com/cmontage/proxyrules-cm/main/Clash/DIRECT/China.yaml"
+      path: ./myConfig/ruleset/direct/china.yaml
+      interval: 86400
+
+    apple:
+      type: http
+      behavior: classical
+      url: "https://raw.gitmirror.com/cmontage/proxyrules-cm/main/Clash/DIRECT/Apple.yaml"
+      path: ./myConfig/ruleset/direct/apple.yaml
+      interval: 86400
+  
+    microsoft:
+      type: http
+      behavior: classical
+      url: "https://raw.gitmirror.com/cmontage/proxyrules-cm/main/Clash/DIRECT/Microsoft.yaml"
+      path: ./myConfig/ruleset/direct/microsoft.yaml
+      interval: 86400
+
+  # 广告拦截
+    reject:
+      type: http
+      behavior: classical
+      url: "https://raw.gitmirror.com/cmontage/proxyrules-cm/main/Clash/REJECT/ADBlock.yaml"
+      path: ./myConfig/ruleset/reject/rejectAD.yaml
+      interval: 86400
+
+  #......之后有需要再加
+
+# 引用规则集、策略组
+rules:
+  - DOMAIN,clash.razord.top,🇨🇳 国内直连
+  - DOMAIN,yacd.haishan.me,🇨🇳 国内直连
+  - PROCESS-NAME,POWERPNT.EXE,🚀 代理节点
+  - DOMAIN-SUFFIX,wetv.vip,🚀 代理节点
+  # 广告拦截
+  - RULE-SET,reject,❌️ 广告拦截
+  # apple
+  - RULE-SET,apple,🍎 Apple
+  # microsoft
+  - RULE-SET,copilot,✨ Copilot
+  - RULE-SET,microsoft,🪟 Microsoft
+  # google
+  - RULE-SET,google,🛸 Google
+  # paypal
+  - RULE-SET,paypal,🅿️ Paypal
+  # netflix
+  - RULE-SET,netflix,📺 Netflix
+  # openai
+  - RULE-SET,openai,🤖 OpenAI
+  # china
+  - RULE-SET,china,🇨🇳 国内直连
+  - GEOIP,CN,🇨🇳 国内直连
+  # 其他不在规则内的
+  - MATCH,🚀 代理节点
