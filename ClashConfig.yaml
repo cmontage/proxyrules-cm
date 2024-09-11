@@ -10,7 +10,7 @@ config:
 # Clash不支持某些订阅链接提取节点(例如CFW v.0.20.39)
 # 请用Clash Verge/Clash Nyanpasu等新内核的客户端
 # 如果一定要用Clash，请自行转换订阅为支持proxy-providers的链接
-  subscription-url: &url "https://proxyinfo.net/api/v1/client/subscribe?token=9bbacd8e709ff9fa6c8cd1114134a2cc"
+  subscription-url: &url "https://你的订阅地址......."
 
 mixed-port: 7890
 allow-lan: #false
