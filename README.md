@@ -14,14 +14,15 @@
 ## Repo Info
 |代理工具| 配置文件 | 规则集 | 备注 |
 |:---:|:---:|:---:|:---:|
-|Clash Meta  |[ClashConfig.yaml](https://github.com/cmontage/proxyrules-cm/blob/main/ClashConfig.yaml)|[./Clash/](https://github.com/cmontage/proxyrules-cm/tree/main/Clash)|✓|
-|Quantumult X|[QuantumultX.conf](https://github.com/cmontage/proxyrules-cm/blob/main/QuantumultX.conf)|[./QuantumultX/](https://github.com/cmontage/proxyrules-cm/tree/main/QuantumultX)|✓|
-|Sing-Box    |待完善|[./Sing-Box/](https://github.com/cmontage/proxyrules-cm/tree/main/Sing-Box)|规则集可用|
+|Clash Meta  |[clash.yaml](https://github.com/cmontage/proxyrules-cm/blob/main/clash.yaml)|[./Clash/](https://github.com/cmontage/proxyrules-cm/tree/main/Clash)|✓|
+|Quantumult X|[quantumultx.conf](https://github.com/cmontage/proxyrules-cm/blob/main/quantumultx.conf)|[./QuantumultX/](https://github.com/cmontage/proxyrules-cm/tree/main/QuantumultX)|✓|
+|Sing-Box    |[sing-box.json](https://github.com/cmontage/proxyrules-cm/blob/main/sing-box.json)|[./Sing-Box/](https://github.com/cmontage/proxyrules-cm/tree/main/Sing-Box)|配置文件仅限[**PuerNya内核⚠️⚠️⚠️**](https://github.com/PuerNya/sing-box)|
  Shadowrocket|未计划|未计划|不怎么用，有空再搞
 - [x] Clash Meta (Verge/Nyanpasu/...)
 - [x] Quantumult X
+- [x] Sing-Box
 - [ ] Shadowrocket
-- [ ] Sing-Box
+
 ### Preview
 |Clash Meta(Verge/Nyanpasu)| Quantumult X |
 |:---:|:---:|
@@ -30,6 +31,10 @@
 ## Quick Start
 
 ### 1、导入配置文件
+
+> [!WARNING]
+> 建议根据自己情况进行修改
+
 #### Clash Meta(Verge/Nyanpasu):
 > 配置设置中输入配置文件链接（二选一）
 > 
@@ -46,6 +51,12 @@
 > https://raw.gitmirror.com/cmontage/proxyrules-cm/main/quantumultx.conf
 > 
 > 导入配置 <details><summary> 展开图片 </summary>![](source/info5.png)</details>
+#### Sing-Box:
+> 导入配置,输入链接（二选一）
+> 
+> https://cdn.jsdelivr.net/gh/cmontage/proxyrules-cm@main/sing-box.json
+>
+> https://raw.gitmirror.com/cmontage/proxyrules-cm/main/sing-box.json
 
 ### 2、导入节点
 #### Clash Meta(Verge/Nyanpasu):
