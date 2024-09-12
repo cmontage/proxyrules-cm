@@ -32,7 +32,7 @@
 
 ### 1、导入配置文件
 
-> [!WARNING]
+> [!TIP]
 > 建议根据自己情况进行修改
 
 #### Clash Meta(Verge/Nyanpasu):
