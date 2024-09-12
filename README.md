@@ -30,12 +30,12 @@
 
 ## Quick Start
 
-### 1、导入配置文件
+## 1、导入配置文件
 
 > [!TIP]
 > 建议根据自己情况进行修改
 
-#### Clash Meta(Verge/Nyanpasu):
+### Clash Meta(Verge/Nyanpasu):
 > 配置设置中输入配置文件链接（二选一）
 > 
 > https://cdn.jsdelivr.net/gh/cmontage/proxyrules-cm@main/clash.yaml
@@ -43,7 +43,7 @@
 > https://raw.gitmirror.com/cmontage/proxyrules-cm/main/clash.yaml
 > 
 > 点击导入 <details><summary> 展开图片 </summary>![](source/info3.png)</details>
-#### Quantumult X:
+### Quantumult X:
 > 找到该页面，点击下载配置,输入链接（二选一）
 > 
 > https://cdn.jsdelivr.net/gh/cmontage/proxyrules-cm@main/quantumultx.conf
@@ -51,20 +51,20 @@
 > https://raw.gitmirror.com/cmontage/proxyrules-cm/main/quantumultx.conf
 > 
 > 导入配置 <details><summary> 展开图片 </summary>![](source/info5.png)</details>
-#### Sing-Box:
+### Sing-Box:
 > 导入配置,输入链接（二选一）
 > 
 > https://cdn.jsdelivr.net/gh/cmontage/proxyrules-cm@main/sing-box.json
 >
 > https://raw.gitmirror.com/cmontage/proxyrules-cm/main/sing-box.json
 
-### 2、导入节点
-#### Clash Meta(Verge/Nyanpasu):
+## 2、导入节点
+### Clash Meta(Verge/Nyanpasu):
 > 在导入的配置文件中替换你的订阅地址 <details><summary> 展开图片 </summary>![](source/info4.png)</details>
-#### Quantumult X:
+### Quantumult X:
 > 在节点资源中输入你的订阅地址进行导入 <details><summary> 展开图片 </summary>![](source/info6.png)</details> <details><summary> 展开图片 </summary>![](source/info7.png)</details>
 
-### 3、规则集导入
+## 3、规则集导入
 通过远程导入分流规则，远程规则链接请看 [Rules Source](README.md#rules-source)，以下为不同代理工具中的导入方法
 > Clash Meta(Verge/Nyanpasu)只能源代码导入
 > 
