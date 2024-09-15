@@ -1,0 +1,7 @@
+# Google Voice
+# Update: 2024-09-14
+payload:
+  - DOMAIN,lens.l.google.com
+  - DOMAIN,voice.telephony.goog
+  - DOMAIN,voice.google.com
+  - DOMAIN-KEYWORD,voice
