@@ -65,7 +65,7 @@
 > 在节点资源中输入你的订阅地址进行导入 <details><summary> 展开图片 </summary>![](source/info6.png)</details> <details><summary> 展开图片 </summary>![](source/info7.png)</details>
 
 ## 3、规则集导入
-通过远程导入分流规则，远程规则链接请看 [Rules Source](README.md#rules-source)，以下为不同代理工具中的导入方法
+通过远程导入分流规则，远程规则链接请看 [Rules Source](https://github.com/cmontage/proxyrules-cm?tab=readme-ov-file#rules-source)，以下为不同代理工具中的导入方法
 > Clash Meta(Verge/Nyanpasu)只能源代码导入
 > 
 > Quantumult X可以在规则资源中通过GUI交互导入，也可以在配置文件源代码中导入
