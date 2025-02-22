@@ -1,0 +1,9 @@
+# Game
+# Update: 2024-04-14
+payload:
+# Steam
+ - DOMAIN,steamcdn-a.akamaihd.net
+ - DOMAIN,community.steamstatic.com
+ - DOMAIN,media.steampowered.com
+ - DOMAIN-SUFFIX,steamcommunity.com
+ - DOMAIN-SUFFIX,store.steampowered.com
