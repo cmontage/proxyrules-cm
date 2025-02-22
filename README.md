@@ -38,25 +38,25 @@
 ### Clash Meta(Verge/Nyanpasu):
 > 配置设置中输入配置文件链接（二选一）
 > 
-> https://cdn.jsdelivr.net/gh/cmontage/proxyrules-cm@main/clash.yaml
+> https://gcore.jsdelivr.net/gh/cmontage/proxyrules-cm@main/clash.yaml
 > 
-> https://raw.gitmirror.com/cmontage/proxyrules-cm/main/clash.yaml
+> https://raw.githubusercontent.com/cmontage/proxyrules-cm/main/clash.yaml
 > 
 > 点击导入 <details><summary> 展开图片 </summary>![](source/info3.png)</details>
 ### Quantumult X:
 > 找到该页面，点击下载配置,输入链接（二选一）
 > 
-> https://cdn.jsdelivr.net/gh/cmontage/proxyrules-cm@main/quantumultx.conf
+> https://gcore.jsdelivr.net/gh/cmontage/proxyrules-cm@main/quantumultx.conf
 >
-> https://raw.gitmirror.com/cmontage/proxyrules-cm/main/quantumultx.conf
+> https://raw.githubusercontent.com/cmontage/proxyrules-cm/main/quantumultx.conf
 > 
 > 导入配置 <details><summary> 展开图片 </summary>![](source/info5.png)</details>
 ### Sing-Box:
 > 导入配置,输入链接（二选一）
 > 
-> https://cdn.jsdelivr.net/gh/cmontage/proxyrules-cm@main/sing-box.json
+> https://gcore.jsdelivr.net/gh/cmontage/proxyrules-cm@main/sing-box.json
 >
-> https://raw.gitmirror.com/cmontage/proxyrules-cm/main/sing-box.json
+> https://raw.githubusercontent.com/cmontage/proxyrules-cm/main/sing-box.json
 
 ## 2、导入节点
 ### Clash Meta(Verge/Nyanpasu):
@@ -83,25 +83,25 @@ rule-providers:
     google:
       type: http
       behavior: classical
-      url: "https://cdn.jsdelivr.net/gh/cmontage/proxyrules-cm@main/Clash/PROXY/Google.yaml"
+      url: "https://gcore.jsdelivr.net/gh/cmontage/proxyrules-cm@main/Clash/PROXY/Google.yaml"
       path: ./myConfig/ruleset/proxy/google.yaml
       interval: 86400
     netflix:
       type: http
       behavior: classical
-      url: "https://cdn.jsdelivr.net/gh/cmontage/proxyrules-cm@main/Clash/PROXY/Netflix.yaml"
+      url: "https://gcore.jsdelivr.net/gh/cmontage/proxyrules-cm@main/Clash/PROXY/Netflix.yaml"
       path: ./myConfig/ruleset/proxy/netflix.yaml
       interval: 86400
     copilot:
       type: http
       behavior: classical
-      url: "https://cdn.jsdelivr.net/gh/cmontage/proxyrules-cm@main/Clash/PROXY/Copilot.yaml"
+      url: "https://gcore.jsdelivr.net/gh/cmontage/proxyrules-cm@main/Clash/PROXY/Copilot.yaml"
       path: ./myConfig/ruleset/proxy/copilot.yaml
       interval: 86400
     openai:
       type: http
       behavior: classical
-      url: "https://cdn.jsdelivr.net/gh/cmontage/proxyrules-cm@main/Clash/PROXY/OpenAI.yaml"
+      url: "https://gcore.jsdelivr.net/gh/cmontage/proxyrules-cm@main/Clash/PROXY/OpenAI.yaml"
       path: ./myConfig/ruleset/proxy/openai.yaml
       interval: 86400
 
@@ -109,19 +109,19 @@ rule-providers:
     china:
       type: http
       behavior: classical
-      url: "https://cdn.jsdelivr.net/gh/cmontage/proxyrules-cm@main/Clash/DIRECT/China.yaml"
+      url: "https://gcore.jsdelivr.net/gh/cmontage/proxyrules-cm@main/Clash/DIRECT/China.yaml"
       path: ./myConfig/ruleset/direct/china.yaml
       interval: 86400
     apple:
       type: http
       behavior: classical
-      url: "https://cdn.jsdelivr.net/gh/cmontage/proxyrules-cm@main/Clash/DIRECT/Apple.yaml"
+      url: "https://gcore.jsdelivr.net/gh/cmontage/proxyrules-cm@main/Clash/DIRECT/Apple.yaml"
       path: ./myConfig/ruleset/direct/apple.yaml
       interval: 86400
     microsoft:
       type: http
       behavior: classical
-      url: "https://cdn.jsdelivr.net/gh/cmontage/proxyrules-cm@main/Clash/DIRECT/Microsoft.yaml"
+      url: "https://gcore.jsdelivr.net/gh/cmontage/proxyrules-cm@main/Clash/DIRECT/Microsoft.yaml"
       path: ./myConfig/ruleset/direct/microsoft.yaml
       interval: 86400
 
@@ -129,7 +129,7 @@ rule-providers:
     reject:
       type: http
       behavior: classical
-      url: "https://cdn.jsdelivr.net/gh/cmontage/proxyrules-cm@main/Clash/REJECT/ADBlock.yaml"
+      url: "https://gcore.jsdelivr.net/gh/cmontage/proxyrules-cm@main/Clash/REJECT/ADBlock.yaml"
       path: ./myConfig/ruleset/reject/rejectAD.yaml
       interval: 86400
 
@@ -143,16 +143,16 @@ rule-providers:
 # 规则集
 [filter_remote]
 #广告拦截
-https://cdn.jsdelivr.net/gh/cmontage/proxyrules-cm@main/QuantumultX/REJECT/ADBlock.yaml, tag=❌️ 广告来源, force-policy=广告拦截, update-interval=172800, opt-parser=false, enabled=true
+https://gcore.jsdelivr.net/gh/cmontage/proxyrules-cm@main/QuantumultX/REJECT/ADBlock.yaml, tag=❌️ 广告来源, force-policy=广告拦截, update-interval=172800, opt-parser=false, enabled=true
 #代理
-https://cdn.jsdelivr.net/gh/cmontage/proxyrules-cm@main/QuantumultX/PROXY/Google.yaml, tag=🛸 谷歌服务, force-policy=Google, update-interval=172800, opt-parser=false, enabled=true
-https://cdn.jsdelivr.net/gh/cmontage/proxyrules-cm@main/QuantumultX/PROXY/Netflix.yaml, tag=📺 奈飞视频, force-policy=Netflix, update-interval=172800, opt-parser=false, enabled=true
-https://cdn.jsdelivr.net/gh/cmontage/proxyrules-cm@main/QuantumultX/PROXY/Copilot.yaml, tag=💬 Copilot, force-policy=Copilot, update-interval=172800, opt-parser=false, enabled=true
-https://cdn.jsdelivr.net/gh/cmontage/proxyrules-cm@main/QuantumultX/PROXY/OpenAI.yaml, tag=🤖 OpenAI, force-policy=OpenAI, update-interval=172800, opt-parser=false, enabled=true
+https://gcore.jsdelivr.net/gh/cmontage/proxyrules-cm@main/QuantumultX/PROXY/Google.yaml, tag=🛸 谷歌服务, force-policy=Google, update-interval=172800, opt-parser=false, enabled=true
+https://gcore.jsdelivr.net/gh/cmontage/proxyrules-cm@main/QuantumultX/PROXY/Netflix.yaml, tag=📺 奈飞视频, force-policy=Netflix, update-interval=172800, opt-parser=false, enabled=true
+https://gcore.jsdelivr.net/gh/cmontage/proxyrules-cm@main/QuantumultX/PROXY/Copilot.yaml, tag=💬 Copilot, force-policy=Copilot, update-interval=172800, opt-parser=false, enabled=true
+https://gcore.jsdelivr.net/gh/cmontage/proxyrules-cm@main/QuantumultX/PROXY/OpenAI.yaml, tag=🤖 OpenAI, force-policy=OpenAI, update-interval=172800, opt-parser=false, enabled=true
 #直连
-https://cdn.jsdelivr.net/gh/cmontage/proxyrules-cm@main/QuantumultX/DIRECT/Apple.yaml, tag=🍎 苹果服务, force-policy=Apple, update-interval=172800, opt-parser=false, enabled=true
-https://cdn.jsdelivr.net/gh/cmontage/proxyrules-cm@main/QuantumultX/DIRECT/Microsoft.yaml, tag=🪟 微软服务, force-policy=Microsoft, update-interval=172800, opt-parser=false, enabled=true
-https://cdn.jsdelivr.net/gh/cmontage/proxyrules-cm@main/QuantumultX/DIRECT/China.yaml, tag=🇨🇳 国内地址, force-policy=国内直连, update-interval=172800, opt-parser=false, enabled=true
+https://gcore.jsdelivr.net/gh/cmontage/proxyrules-cm@main/QuantumultX/DIRECT/Apple.yaml, tag=🍎 苹果服务, force-policy=Apple, update-interval=172800, opt-parser=false, enabled=true
+https://gcore.jsdelivr.net/gh/cmontage/proxyrules-cm@main/QuantumultX/DIRECT/Microsoft.yaml, tag=🪟 微软服务, force-policy=Microsoft, update-interval=172800, opt-parser=false, enabled=true
+https://gcore.jsdelivr.net/gh/cmontage/proxyrules-cm@main/QuantumultX/DIRECT/China.yaml, tag=🇨🇳 国内地址, force-policy=国内直连, update-interval=172800, opt-parser=false, enabled=true
 ```
 
 - **Sing-Box**
@@ -167,7 +167,7 @@ https://cdn.jsdelivr.net/gh/cmontage/proxyrules-cm@main/QuantumultX/DIRECT/China
         "type": "remote",
         "format": "source",
         "path": "./myConfig/ruleset/reject/adblock.json",
-        "url": "https://cdn.jsdelivr.net/gh/cmontage/clashrules-cm@main/Sing-Box/REJECT/ADBlock.json"
+        "url": "https://gcore.jsdelivr.net/gh/cmontage/clashrules-cm@main/Sing-Box/REJECT/ADBlock.json"
       }
 
 
@@ -177,28 +177,28 @@ https://cdn.jsdelivr.net/gh/cmontage/proxyrules-cm@main/QuantumultX/DIRECT/China
         "type": "remote",
         "format": "source",
         "path": "./myConfig/ruleset/proxy/google.json",
-        "url": "https://cdn.jsdelivr.net/gh/cmontage/clashrules-cm@main/Sing-Box/PROXY/Google.json"
+        "url": "https://gcore.jsdelivr.net/gh/cmontage/clashrules-cm@main/Sing-Box/PROXY/Google.json"
       },
       {
         "tag": "netflix",
         "type": "remote",
         "format": "source",
         "path": "./myConfig/ruleset/proxy/netflix.json",
-        "url": "https://cdn.jsdelivr.net/gh/cmontage/clashrules-cm@main/Sing-Box/PROXY/Netflix.json"
+        "url": "https://gcore.jsdelivr.net/gh/cmontage/clashrules-cm@main/Sing-Box/PROXY/Netflix.json"
       },
       {
         "tag": "copilot",
         "type": "remote",
         "format": "source",
         "path": "./myConfig/ruleset/proxy/copilot.json",
-        "url": "https://cdn.jsdelivr.net/gh/cmontage/clashrules-cm@main/Sing-Box/PROXY/Copilot.json"
+        "url": "https://gcore.jsdelivr.net/gh/cmontage/clashrules-cm@main/Sing-Box/PROXY/Copilot.json"
       },
       {
         "tag": "openai",
         "type": "remote",
         "format": "source",
         "path": "./myConfig/ruleset/proxy/openai.json",
-        "url": "https://cdn.jsdelivr.net/gh/cmontage/clashrules-cm@main/Sing-Box/PROXY/OpenAI.json"
+        "url": "https://gcore.jsdelivr.net/gh/cmontage/clashrules-cm@main/Sing-Box/PROXY/OpenAI.json"
       },
 
       // 直连
@@ -207,21 +207,21 @@ https://cdn.jsdelivr.net/gh/cmontage/proxyrules-cm@main/QuantumultX/DIRECT/China
         "type": "remote",
         "format": "source",
         "path": "./myConfig/ruleset/direct/china.json",
-        "url": "https://cdn.jsdelivr.net/gh/cmontage/clashrules-cm@main/Sing-Box/DIRECT/China.json"
+        "url": "https://gcore.jsdelivr.net/gh/cmontage/clashrules-cm@main/Sing-Box/DIRECT/China.json"
       },
       {
         "tag": "apple",
         "type": "remote",
         "format": "source",
         "path": "./myConfig/ruleset/direct/apple.json",
-        "url": "https://cdn.jsdelivr.net/gh/cmontage/clashrules-cm@main/Sing-Box/DIRECT/Apple.json"
+        "url": "https://gcore.jsdelivr.net/gh/cmontage/clashrules-cm@main/Sing-Box/DIRECT/Apple.json"
       },
       {
         "tag": "microsoft",
         "type": "remote",
         "format": "source",
         "path": "./myConfig/ruleset/direct/microsoft.json",
-        "url": "https://cdn.jsdelivr.net/gh/cmontage/clashrules-cm@main/Sing-Box/DIRECT/Microsoft.json"
+        "url": "https://gcore.jsdelivr.net/gh/cmontage/clashrules-cm@main/Sing-Box/DIRECT/Microsoft.json"
       },
 
     ],
@@ -234,35 +234,37 @@ https://cdn.jsdelivr.net/gh/cmontage/proxyrules-cm@main/QuantumultX/DIRECT/China
 
 #### :octocat: Github Raw
 - **DIRECT - 直连**<br />
-国内:https://raw.gitmirror.com/cmontage/proxyrules-cm/main/Clash/DIRECT/China.yaml<br />
-微软:https://raw.gitmirror.com/cmontage/proxyrules-cm/main/Clash/DIRECT/Microsoft.yaml<br />
-Apple:https://raw.gitmirror.com/cmontage/proxyrules-cm/main/Clash/DIRECT/Apple.yaml
+国内:https://raw.githubusercontent.com/cmontage/proxyrules-cm/main/Clash/DIRECT/China.yaml<br />
+微软:https://raw.githubusercontent.com/cmontage/proxyrules-cm/main/Clash/DIRECT/Microsoft.yaml<br />
+Apple:https://raw.githubusercontent.com/cmontage/proxyrules-cm/main/Clash/DIRECT/Apple.yaml
 
 - **PROXY - 代理**<br />
-GFW:https://raw.gitmirror.com/cmontage/proxyrules-cm/main/Clash/PROXY/GFW.yaml<br />
-Google:https://raw.gitmirror.com/cmontage/proxyrules-cm/main/Clash/PROXY/Google.yaml<br />
-Netflix:https://raw.gitmirror.com/cmontage/proxyrules-cm/main/Clash/PROXY/Netflix.yaml<br />
-Copilot:https://raw.gitmirror.com/cmontage/proxyrules-cm/main/Clash/PROXY/Copilot.yaml<br />
-OpenAI:https://raw.gitmirror.com/cmontage/proxyrules-cm/main/Clash/PROXY/OpenAI.yaml
+GFW:https://raw.githubusercontent.com/cmontage/proxyrules-cm/main/Clash/PROXY/GFW.yaml<br />
+GFW:https://raw.githubusercontent.com/cmontage/proxyrules-cm/main/Clash/PROXY/Game.yaml<br />
+Google:https://raw.githubusercontent.com/cmontage/proxyrules-cm/main/Clash/PROXY/Google.yaml<br />
+Netflix:https://raw.githubusercontent.com/cmontage/proxyrules-cm/main/Clash/PROXY/Netflix.yaml<br />
+Copilot:https://raw.githubusercontent.com/cmontage/proxyrules-cm/main/Clash/PROXY/Copilot.yaml<br />
+OpenAI:https://raw.githubusercontent.com/cmontage/proxyrules-cm/main/Clash/PROXY/OpenAI.yaml
 
 - **REJECT - 屏蔽广告**<br />
-广告:https://raw.gitmirror.com/cmontage/proxyrules-cm/main/Clash/REJECT/ADBlock.yaml
+广告:https://raw.githubusercontent.com/cmontage/proxyrules-cm/main/Clash/REJECT/ADBlock.yaml
 
 #### ⚡CDN jsDelivr
 - **DIRECT - 直连**<br />
-国内直连:https://cdn.jsdelivr.net/gh/cmontage/proxyrules-cm@main/Clash/DIRECT/China.yaml<br />
-微软:https://cdn.jsdelivr.net/gh/cmontage/proxyrules-cm@main/Clash/DIRECT/Microsoft.yaml<br />
-Apple:https://cdn.jsdelivr.net/gh/cmontage/proxyrules-cm@main/Clash/DIRECT/Apple.yaml
+国内直连:https://gcore.jsdelivr.net/gh/cmontage/proxyrules-cm@main/Clash/DIRECT/China.yaml<br />
+微软:https://gcore.jsdelivr.net/gh/cmontage/proxyrules-cm@main/Clash/DIRECT/Microsoft.yaml<br />
+Apple:https://gcore.jsdelivr.net/gh/cmontage/proxyrules-cm@main/Clash/DIRECT/Apple.yaml
 
 - **PROXY - 代理**<br />
-GFW-被墙:https://cdn.jsdelivr.net/gh/cmontage/proxyrules-cm@main/Clash/PROXY/GFW.yaml<br />
-Google:https://cdn.jsdelivr.net/gh/cmontage/proxyrules-cm@main/Clash/PROXY/Google.yaml<br />
-Netflix:https://cdn.jsdelivr.net/gh/cmontage/proxyrules-cm@main/Clash/PROXY/Netflix.yaml<br />
-Copilot:https://cdn.jsdelivr.net/gh/cmontage/proxyrules-cm@main/Clash/PROXY/Copilot.yaml<br />
-OpenAI:https://cdn.jsdelivr.net/gh/cmontage/proxyrules-cm@main/Clash/PROXY/OpenAI.yaml
+GFW-被墙:https://gcore.jsdelivr.net/gh/cmontage/proxyrules-cm@main/Clash/PROXY/GFW.yaml<br />
+GFW-被墙:https://gcore.jsdelivr.net/gh/cmontage/proxyrules-cm@main/Clash/PROXY/Game.yaml<br />
+Google:https://gcore.jsdelivr.net/gh/cmontage/proxyrules-cm@main/Clash/PROXY/Google.yaml<br />
+Netflix:https://gcore.jsdelivr.net/gh/cmontage/proxyrules-cm@main/Clash/PROXY/Netflix.yaml<br />
+Copilot:https://gcore.jsdelivr.net/gh/cmontage/proxyrules-cm@main/Clash/PROXY/Copilot.yaml<br />
+OpenAI:https://gcore.jsdelivr.net/gh/cmontage/proxyrules-cm@main/Clash/PROXY/OpenAI.yaml
 
 - **REJECT - 屏蔽广告**<br />
-广告:https://cdn.jsdelivr.net/gh/cmontage/proxyrules-cm@main/Clash/REJECT/ADBlock.yaml
+广告:https://gcore.jsdelivr.net/gh/cmontage/proxyrules-cm@main/Clash/REJECT/ADBlock.yaml
 
 </details>
 
@@ -271,33 +273,33 @@ OpenAI:https://cdn.jsdelivr.net/gh/cmontage/proxyrules-cm@main/Clash/PROXY/OpenA
 
 #### :octocat: Github Raw
 - **DIRECT - 直连**<br />
-国内:https://raw.gitmirror.com/cmontage/proxyrules-cm/main/QuantumultX/DIRECT/China.yaml<br />
-微软:https://raw.gitmirror.com/cmontage/proxyrules-cm/main/QuantumultX/DIRECT/Microsoft.yaml<br />
-Apple:https://raw.gitmirror.com/cmontage/proxyrules-cm/main/QuantumultX/DIRECT/Apple.yaml
+国内:https://raw.githubusercontent.com/cmontage/proxyrules-cm/main/QuantumultX/DIRECT/China.yaml<br />
+微软:https://raw.githubusercontent.com/cmontage/proxyrules-cm/main/QuantumultX/DIRECT/Microsoft.yaml<br />
+Apple:https://raw.githubusercontent.com/cmontage/proxyrules-cm/main/QuantumultX/DIRECT/Apple.yaml
 
 - **PROXY - 代理**<br />
-Google:https://raw.gitmirror.com/cmontage/proxyrules-cm/main/QuantumultX/PROXY/Google.yaml<br />
-Netflix:https://raw.gitmirror.com/cmontage/proxyrules-cm/main/QuantumultX/PROXY/Netflix.yaml<br />
-Copilot:https://raw.gitmirror.com/cmontage/proxyrules-cm/main/QuantumultX/PROXY/Copilot.yaml<br />
-OpenAI:https://raw.gitmirror.com/cmontage/proxyrules-cm/main/QuantumultX/PROXY/OpenAI.yaml
+Google:https://raw.githubusercontent.com/cmontage/proxyrules-cm/main/QuantumultX/PROXY/Google.yaml<br />
+Netflix:https://raw.githubusercontent.com/cmontage/proxyrules-cm/main/QuantumultX/PROXY/Netflix.yaml<br />
+Copilot:https://raw.githubusercontent.com/cmontage/proxyrules-cm/main/QuantumultX/PROXY/Copilot.yaml<br />
+OpenAI:https://raw.githubusercontent.com/cmontage/proxyrules-cm/main/QuantumultX/PROXY/OpenAI.yaml
 
 - **REJECT - 屏蔽广告**<br />
-广告:https://raw.gitmirror.com/cmontage/proxyrules-cm/main/QuantumultX/REJECT/ADBlock.yaml
+广告:https://raw.githubusercontent.com/cmontage/proxyrules-cm/main/QuantumultX/REJECT/ADBlock.yaml
 
 #### ⚡CDN jsDelivr
 - **DIRECT - 直连**<br />
-国内直连:https://cdn.jsdelivr.net/gh/cmontage/proxyrules-cm@main/QuantumultX/DIRECT/China.yaml<br />
-微软:https://cdn.jsdelivr.net/gh/cmontage/proxyrules-cm@main/QuantumultX/DIRECT/Microsoft.yaml<br />
-Apple:https://cdn.jsdelivr.net/gh/cmontage/proxyrules-cm@main/QuantumultX/DIRECT/Apple.yaml
+国内直连:https://gcore.jsdelivr.net/gh/cmontage/proxyrules-cm@main/QuantumultX/DIRECT/China.yaml<br />
+微软:https://gcore.jsdelivr.net/gh/cmontage/proxyrules-cm@main/QuantumultX/DIRECT/Microsoft.yaml<br />
+Apple:https://gcore.jsdelivr.net/gh/cmontage/proxyrules-cm@main/QuantumultX/DIRECT/Apple.yaml
 
 - **PROXY - 代理**<br />
-Google:https://cdn.jsdelivr.net/gh/cmontage/proxyrules-cm@main/QuantumultX/PROXY/Google.yaml<br />
-Netflix:https://cdn.jsdelivr.net/gh/cmontage/proxyrules-cm@main/QuantumultX/PROXY/Netflix.yaml<br />
-Copilot:https://cdn.jsdelivr.net/gh/cmontage/proxyrules-cm@main/QuantumultX/PROXY/Copilot.yaml<br />
-OpenAI:https://cdn.jsdelivr.net/gh/cmontage/proxyrules-cm@main/QuantumultX/PROXY/OpenAI.yaml
+Google:https://gcore.jsdelivr.net/gh/cmontage/proxyrules-cm@main/QuantumultX/PROXY/Google.yaml<br />
+Netflix:https://gcore.jsdelivr.net/gh/cmontage/proxyrules-cm@main/QuantumultX/PROXY/Netflix.yaml<br />
+Copilot:https://gcore.jsdelivr.net/gh/cmontage/proxyrules-cm@main/QuantumultX/PROXY/Copilot.yaml<br />
+OpenAI:https://gcore.jsdelivr.net/gh/cmontage/proxyrules-cm@main/QuantumultX/PROXY/OpenAI.yaml
 
 - **REJECT - 屏蔽广告**<br />
-广告:https://cdn.jsdelivr.net/gh/cmontage/proxyrules-cm@main/QuantumultX/REJECT/ADBlock.yaml
+广告:https://gcore.jsdelivr.net/gh/cmontage/proxyrules-cm@main/QuantumultX/REJECT/ADBlock.yaml
 
 </details>
 
@@ -306,37 +308,37 @@ OpenAI:https://cdn.jsdelivr.net/gh/cmontage/proxyrules-cm@main/QuantumultX/PROXY
 
 #### :octocat: Github Raw
 - **DIRECT - 直连**<br />
-国内:https://raw.gitmirror.com/cmontage/proxyrules-cm/main/Sing-Box/DIRECT/China.json<br />
-微软:https://raw.gitmirror.com/cmontage/proxyrules-cm/main/Sing-Box/DIRECT/Microsoft.json<br />
-Apple:https://raw.gitmirror.com/cmontage/proxyrules-cm/main/Sing-Box/DIRECT/Apple.json
+国内:https://raw.githubusercontent.com/cmontage/proxyrules-cm/main/Sing-Box/DIRECT/China.json<br />
+微软:https://raw.githubusercontent.com/cmontage/proxyrules-cm/main/Sing-Box/DIRECT/Microsoft.json<br />
+Apple:https://raw.githubusercontent.com/cmontage/proxyrules-cm/main/Sing-Box/DIRECT/Apple.json
 
 - **PROXY - 代理**<br />
-GFW:https://raw.gitmirror.com/cmontage/proxyrules-cm/main/Sing-Box/PROXY/GFW.json<br />
-Google:https://raw.gitmirror.com/cmontage/proxyrules-cm/main/Sing-Box/PROXY/Google.json<br />
-PayPal:https://raw.gitmirror.com/cmontage/proxyrules-cm/main/Sing-Box/PROXY/PayPal.json<br />
-Netflix:https://raw.gitmirror.com/cmontage/proxyrules-cm/main/Sing-Box/PROXY/Netflix.json<br />
-Copilot:https://raw.gitmirror.com/cmontage/proxyrules-cm/main/Sing-Box/PROXY/Copilot.json<br />
-OpenAI:https://raw.gitmirror.com/cmontage/proxyrules-cm/main/Sing-Box/PROXY/OpenAI.json
+GFW:https://raw.githubusercontent.com/cmontage/proxyrules-cm/main/Sing-Box/PROXY/GFW.json<br />
+Google:https://raw.githubusercontent.com/cmontage/proxyrules-cm/main/Sing-Box/PROXY/Google.json<br />
+PayPal:https://raw.githubusercontent.com/cmontage/proxyrules-cm/main/Sing-Box/PROXY/PayPal.json<br />
+Netflix:https://raw.githubusercontent.com/cmontage/proxyrules-cm/main/Sing-Box/PROXY/Netflix.json<br />
+Copilot:https://raw.githubusercontent.com/cmontage/proxyrules-cm/main/Sing-Box/PROXY/Copilot.json<br />
+OpenAI:https://raw.githubusercontent.com/cmontage/proxyrules-cm/main/Sing-Box/PROXY/OpenAI.json
 
 - **REJECT - 屏蔽广告**<br />
-广告:https://raw.gitmirror.com/cmontage/proxyrules-cm/main/Sing-Box/REJECT/ADBlock.json
+广告:https://raw.githubusercontent.com/cmontage/proxyrules-cm/main/Sing-Box/REJECT/ADBlock.json
 
 #### ⚡CDN jsDelivr
 - **DIRECT - 直连**<br />
-国内直连:https://cdn.jsdelivr.net/gh/cmontage/proxyrules-cm@main/Sing-Box/DIRECT/China.json<br />
-微软:https://cdn.jsdelivr.net/gh/cmontage/proxyrules-cm@main/Sing-Box/DIRECT/Microsoft.json<br />
-Apple:https://cdn.jsdelivr.net/gh/cmontage/proxyrules-cm@main/Sing-Box/DIRECT/Apple.json
+国内直连:https://gcore.jsdelivr.net/gh/cmontage/proxyrules-cm@main/Sing-Box/DIRECT/China.json<br />
+微软:https://gcore.jsdelivr.net/gh/cmontage/proxyrules-cm@main/Sing-Box/DIRECT/Microsoft.json<br />
+Apple:https://gcore.jsdelivr.net/gh/cmontage/proxyrules-cm@main/Sing-Box/DIRECT/Apple.json
 
 - **PROXY - 代理**<br />
-GFW-被墙:https://cdn.jsdelivr.net/gh/cmontage/proxyrules-cm@main/Sing-Box/PROXY/GFW.json<br />
-Google:https://cdn.jsdelivr.net/gh/cmontage/proxyrules-cm@main/Sing-Box/PROXY/Google.json<br />
-PayPal:https://cdn.jsdelivr.net/gh/cmontage/proxyrules-cm@main/Sing-Box/PROXY/PayPal.json<br />
-Netflix:https://cdn.jsdelivr.net/gh/cmontage/proxyrules-cm@main/Sing-Box/PROXY/Netflix.json<br />
-Copilot:https://cdn.jsdelivr.net/gh/cmontage/proxyrules-cm@main/Sing-Box/PROXY/Copilot.json<br />
-OpenAI:https://cdn.jsdelivr.net/gh/cmontage/proxyrules-cm@main/Sing-Box/PROXY/OpenAI.json
+GFW-被墙:https://gcore.jsdelivr.net/gh/cmontage/proxyrules-cm@main/Sing-Box/PROXY/GFW.json<br />
+Google:https://gcore.jsdelivr.net/gh/cmontage/proxyrules-cm@main/Sing-Box/PROXY/Google.json<br />
+PayPal:https://gcore.jsdelivr.net/gh/cmontage/proxyrules-cm@main/Sing-Box/PROXY/PayPal.json<br />
+Netflix:https://gcore.jsdelivr.net/gh/cmontage/proxyrules-cm@main/Sing-Box/PROXY/Netflix.json<br />
+Copilot:https://gcore.jsdelivr.net/gh/cmontage/proxyrules-cm@main/Sing-Box/PROXY/Copilot.json<br />
+OpenAI:https://gcore.jsdelivr.net/gh/cmontage/proxyrules-cm@main/Sing-Box/PROXY/OpenAI.json
 
 - **REJECT - 屏蔽广告**<br />
-广告:https://cdn.jsdelivr.net/gh/cmontage/proxyrules-cm@main/Sing-Box/REJECT/ADBlock.json
+广告:https://gcore.jsdelivr.net/gh/cmontage/proxyrules-cm@main/Sing-Box/REJECT/ADBlock.json
 
 </details>
 
