@@ -240,7 +240,7 @@ Apple:https://raw.githubusercontent.com/cmontage/proxyrules-cm/main/Clash/DIRECT
 
 - **PROXY - 代理**<br />
 GFW:https://raw.githubusercontent.com/cmontage/proxyrules-cm/main/Clash/PROXY/GFW.yaml<br />
-GFW:https://raw.githubusercontent.com/cmontage/proxyrules-cm/main/Clash/PROXY/Game.yaml<br />
+Game:https://raw.githubusercontent.com/cmontage/proxyrules-cm/main/Clash/PROXY/Game.yaml<br />
 Google:https://raw.githubusercontent.com/cmontage/proxyrules-cm/main/Clash/PROXY/Google.yaml<br />
 Netflix:https://raw.githubusercontent.com/cmontage/proxyrules-cm/main/Clash/PROXY/Netflix.yaml<br />
 Copilot:https://raw.githubusercontent.com/cmontage/proxyrules-cm/main/Clash/PROXY/Copilot.yaml<br />
@@ -257,7 +257,7 @@ Apple:https://gcore.jsdelivr.net/gh/cmontage/proxyrules-cm@main/Clash/DIRECT/App
 
 - **PROXY - 代理**<br />
 GFW-被墙:https://gcore.jsdelivr.net/gh/cmontage/proxyrules-cm@main/Clash/PROXY/GFW.yaml<br />
-GFW-被墙:https://gcore.jsdelivr.net/gh/cmontage/proxyrules-cm@main/Clash/PROXY/Game.yaml<br />
+Game:https://gcore.jsdelivr.net/gh/cmontage/proxyrules-cm@main/Clash/PROXY/Game.yaml<br />
 Google:https://gcore.jsdelivr.net/gh/cmontage/proxyrules-cm@main/Clash/PROXY/Google.yaml<br />
 Netflix:https://gcore.jsdelivr.net/gh/cmontage/proxyrules-cm@main/Clash/PROXY/Netflix.yaml<br />
 Copilot:https://gcore.jsdelivr.net/gh/cmontage/proxyrules-cm@main/Clash/PROXY/Copilot.yaml<br />
