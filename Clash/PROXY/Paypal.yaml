@@ -1,17 +1,24 @@
-# PayPal
+# NAME: PayPal
+# AUTHOR: blackmatrix7
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# UPDATED: 2026-03-29 00:24:31
+# DOMAIN-KEYWORD: 1
+# DOMAIN-SUFFIX: 246
+# TOTAL: 247
 payload:
+  - DOMAIN-KEYWORD,paypal
   - DOMAIN-SUFFIX,account-paypal.info
   - DOMAIN-SUFFIX,account-paypal.net
   - DOMAIN-SUFFIX,account-paypal.org
   - DOMAIN-SUFFIX,accountpaypal.com
   - DOMAIN-SUFFIX,accountpaypal.net
   - DOMAIN-SUFFIX,accountpaypal.org
-#  - DOMAIN-SUFFIX,anfutong.cn
-#  - DOMAIN-SUFFIX,anfutong.com
-#  - DOMAIN-SUFFIX,anfutong.com.cn
-#  - DOMAIN-SUFFIX,beibao.cn
-#  - DOMAIN-SUFFIX,beibao.com
-#  - DOMAIN-SUFFIX,beibao.com.cn
+  - DOMAIN-SUFFIX,anfutong.cn
+  - DOMAIN-SUFFIX,anfutong.com
+  - DOMAIN-SUFFIX,anfutong.com.cn
+  - DOMAIN-SUFFIX,beibao.cn
+  - DOMAIN-SUFFIX,beibao.com
+  - DOMAIN-SUFFIX,beibao.com.cn
   - DOMAIN-SUFFIX,bill-safe.com
   - DOMAIN-SUFFIX,billmelater.com
   - DOMAIN-SUFFIX,billmelater.info
@@ -243,7 +250,6 @@ payload:
   - DOMAIN-SUFFIX,xoom-experience.com
   - DOMAIN-SUFFIX,xoom.com
   - DOMAIN-SUFFIX,xoom.io
-#  - DOMAIN-SUFFIX,xoom.net.cn
+  - DOMAIN-SUFFIX,xoom.net.cn
   - DOMAIN-SUFFIX,xoom.us
   - DOMAIN-SUFFIX,xoomcom.com
-  - DOMAIN-KEYWORD,paypal

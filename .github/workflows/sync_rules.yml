@@ -1,0 +1,43 @@
+name: Sync Clash Rules
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # Run daily at midnight UTC
+  workflow_dispatch: # Allow manual trigger
+
+jobs:
+  sync_rules:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.10'
+        
+    - name: Run sync script
+      run: |
+        # Set the environment variable for creator name extraction
+        export GITHUB_REPOSITORY=${{ github.repository }}
+        python scripts/sync_rules.py
+
+    - name: Commit and push changes
+      run: |
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "github-actions[bot]@users.noreply.github.com"
+        
+        # Add all changed or new files
+        git add .
+        
+        # Only commit if there are changes
+        if git diff --staged --quiet; then
+          echo "No changes to commit."
+        else
+          git commit -m "Auto-sync rules from blackmatrix7/ios_rule_script"
+          git push
+        fi
