@@ -1,10 +1,10 @@
 # NAME: Google
 # AUTHOR: blackmatrix7
 # REPO: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2026-05-11 03:46:53
+# UPDATED: 2026-05-12 03:31:51
 # DOMAIN-KEYWORD: 5
-# DOMAIN-SUFFIX: 691
-# TOTAL: 708
+# DOMAIN-SUFFIX: 684
+# TOTAL: 701
 payload:
   - DOMAIN,voice.telephony.goog
   - DOMAIN-KEYWORD,appspot
@@ -209,7 +209,6 @@ payload:
   - DOMAIN-SUFFIX,doubleclick-cn.net
   - DOMAIN-SUFFIX,doubleclick.com
   - DOMAIN-SUFFIX,doubleclick.net
-  - DOMAIN-SUFFIX,download.qatp1.net
   - DOMAIN-SUFFIX,episodic.com
   - DOMAIN-SUFFIX,fastlane.ci
   - DOMAIN-SUFFIX,fastlane.tools
@@ -558,7 +557,6 @@ payload:
   - DOMAIN-SUFFIX,meet.new
   - DOMAIN-SUFFIX,mfg-inspector.com
   - DOMAIN-SUFFIX,mobileview.page
-  - DOMAIN-SUFFIX,monitoring.qpdp1.net
   - DOMAIN-SUFFIX,moodstocks.com
   - DOMAIN-SUFFIX,near.by
   - DOMAIN-SUFFIX,nest.com
@@ -602,12 +600,8 @@ payload:
   - DOMAIN-SUFFIX,projectara.com
   - DOMAIN-SUFFIX,projectbaseline.com
   - DOMAIN-SUFFIX,publishproxy.com
-  - DOMAIN-SUFFIX,qagpublic.qatp1.net
-  - DOMAIN-SUFFIX,qgadmin.qcpp1.net
   - DOMAIN-SUFFIX,qiao-cn.com
   - DOMAIN-SUFFIX,qpx.googleflights.net
-  - DOMAIN-SUFFIX,qualysapi.qatp1.net
-  - DOMAIN-SUFFIX,qualysguard.qpdp1.net
   - DOMAIN-SUFFIX,questvisual.com
   - DOMAIN-SUFFIX,quickoffice.com
   - DOMAIN-SUFFIX,quiksee.com
@@ -624,7 +618,6 @@ payload:
   - DOMAIN-SUFFIX,run.app
   - DOMAIN-SUFFIX,savethedate.foo
   - DOMAIN-SUFFIX,saynow.com
-  - DOMAIN-SUFFIX,scanservice1.qcpp1.net
   - DOMAIN-SUFFIX,schema.org
   - DOMAIN-SUFFIX,schemer.com
   - DOMAIN-SUFFIX,screenwisetrends.com
